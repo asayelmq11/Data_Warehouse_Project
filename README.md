@@ -75,9 +75,9 @@ SELECT * FROM songs LIMIT 10;
 ---
 
 ## ✨ Features
-Automated ETL from S3 → Redshift
-Star schema optimized for analytics
-Staging tables for data validation
-Duplicate handling to maintain integrity
-Uses AWS services: Redshift, S3, IAM
+1. Automated ETL from S3 → Redshift
+2. Star schema optimized for analytics
+3. Staging tables for data validation
+4. Duplicate handling to maintain integrity
+5. Uses AWS services: Redshift, S3, IAM
 
