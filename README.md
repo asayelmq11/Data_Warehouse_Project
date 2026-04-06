@@ -52,35 +52,32 @@ The ETL pipeline:
 ---
 
 ## ⚡ How to Run
-
-### 1️⃣ Install dependencies
 ```bash
+# 1️⃣ Install dependencies
 pip install boto3 psycopg2-binary configparser
 
-### 2️⃣ Configure AWS credentials in dwh.cfg
-3️⃣ (Optional) Create Redshift cluster
+# 2️⃣ Configure AWS credentials in dwh.cfg
+
+# 3️⃣ (Optional) Create Redshift cluster
 python create_redshift_cluster.py
-4️⃣ Create tables
+
+# 4️⃣ Create tables
 python create_tables.py
-5️⃣ Run ETL pipeline
+
+# 5️⃣ Run ETL pipeline
 python etl.py
-6️⃣ Verify data
+
+# 6️⃣ Verify data in Redshift
 SELECT COUNT(*) FROM songplays;
 SELECT * FROM users LIMIT 10;
 SELECT * FROM songs LIMIT 10;
+```
+---
 
-✨ Features
+## ✨ Features
 Automated ETL from S3 → Redshift
 Star schema optimized for analytics
 Staging tables for data validation
 Duplicate handling to maintain integrity
-Modular, well-documented Python code
 Uses AWS services: Redshift, S3, IAM
-🔮 Future Improvements
-Add data quality checks after ETL steps
-Build a dashboard for analytics
-Expand dimension tables (e.g., location, devices)
-Automate cluster creation/deletion for cost savings
-👩‍💻 Author
 
-Asayel Mq — Data Engineering & Analytics Projects
