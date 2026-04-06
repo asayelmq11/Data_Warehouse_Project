@@ -52,6 +52,7 @@ The ETL pipeline:
 ---
 
 ## ⚡ How to Run
+
 ```bash
 # 1️⃣ Install dependencies
 pip install boto3 psycopg2-binary configparser
